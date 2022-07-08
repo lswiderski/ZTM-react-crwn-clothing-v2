@@ -1,9 +1,46 @@
 
-const App = () => (
-  <div>
-    Hello world
-  </div>
-);
+const App = () => {
+
+  return (
+    <div className="categroeis-container">
+      <div className="category-container">
+        {/* <img />*/}
+        <div className="category-body-cantainer">
+          <h2>Hats</h2>
+          <p>Shop Now</p>
+        </div>
+      </div>
+      <div className="category-container">
+        {/* <img />*/}
+        <div className="category-body-cantainer">
+          <h2>Jackets</h2>
+          <p>Shop Now</p>
+        </div>
+      </div>
+      <div className="category-container">
+        {/* <img />*/}
+        <div className="category-body-cantainer">
+          <h2>Sneakers</h2>
+          <p>Shop Now</p>
+        </div>
+      </div>
+      <div className="category-container">
+        {/* <img />*/}
+        <div className="category-body-cantainer">
+          <h2>Womens</h2>
+          <p>Shop Now</p>
+        </div>
+      </div>
+      <div className="category-container">
+        {/* <img />*/}
+        <div className="category-body-cantainer">
+          <h2>Mens</h2>
+          <p>Shop Now</p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 
 export default App;
