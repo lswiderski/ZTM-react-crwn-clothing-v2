@@ -8,6 +8,8 @@ import {
     createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 
+import SignUpForm from "../../components/sign-up-form/sign-up-form.component";
+
 const SignIn = () => {
     useEffect(() => {
 
@@ -34,6 +36,7 @@ const SignIn = () => {
             Sign-in with google popup</button>
         <button onClick={signInWithGoogleRedirect}>
             Sign-in with google redirect</button>
+        <SignUpForm />
     </div>)
 }
 
