@@ -58,7 +58,6 @@ const SignInForm = () => {
                     alert("incorrect password for email")
                     break;
                 default:
-                    console.log(error);
             }
         }
     }
