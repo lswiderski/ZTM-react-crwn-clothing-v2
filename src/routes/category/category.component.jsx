@@ -9,10 +9,13 @@ import './category.styles.scss'
 
 const Category = () => {
     const { category } = useParams();
+    console.log('render/re-rendering category component');
     const categoriesMap = useSelector(selectCategoriesMap);
     const [products, setProducts] = useState([]);
 
+
     useEffect(() => {
+        console.log('effect fired calling setProducts');
         setProducts(categoriesMap[category]);
     }, [category, categoriesMap])
 
