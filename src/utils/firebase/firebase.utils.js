@@ -61,13 +61,10 @@ export const getCategoriesAndDocuments = async () => {
     const q = query(collectionRef);
 
     const querySnaphot = await getDocs(q);
-    const categoryMap = querySnaphot.docs.reduce((acc, docSnapshot) => {
-        const { title, items } = docSnapshot.data();
-        acc[title.toLowerCase()] = items;
-        return acc;
-    }, {});
+    return querySnaphot.docs.map(docSnapshot => docSnapshot.data());
 
-    return categoryMap;
+
+    // return categoryMap;
 
 }
 
